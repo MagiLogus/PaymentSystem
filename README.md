@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20EM%20EXECUÇÃO&color=red&style=for-the-badge" #vitrinedev/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20EM%20ANDAMENTO&color=RED&style=for-the-badge" #vitrinedev/>
 </p>
 
 ### Tópicos 
@@ -62,18 +62,27 @@ Você pode [acessar a página do projeto](https://magilogus.github.io/GamerProje
 
 ## Desenvolvedor
 
+<div align="left">
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
 | [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
 | :---: | 
+
+</div>
 
 
 [def]: #
