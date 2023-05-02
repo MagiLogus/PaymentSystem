@@ -1,8 +1,2 @@
-﻿using PaymentSystem;
-
-Credito mostrar = new Credito();
-
-    mostrar.Pagar();
-
-
-
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
