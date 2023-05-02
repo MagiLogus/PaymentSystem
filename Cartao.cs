@@ -9,7 +9,17 @@ namespace PaymentSystem
         public abstract void Pagar();
         public string SalvarCartao()
         {
-            return "Cartão salvo com sucessso!";
+            Console.WriteLine(@$"
+            Cartão salvo com sucesso!
+            ╭------------------------------------------╮
+            |               Cartão {this.Bandeira}     |
+            | Número do cartão: {this.NumeroCartao}    |
+            | Titular: {this.Titular}                  |
+            | Bandeira: {this.Bandeira}CVV: {this.Cvv} |
+            ╰------------------------------------------╯
+            ");
+
+            return "";
         }
     }
 }
