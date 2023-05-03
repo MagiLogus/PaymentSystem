@@ -13,6 +13,9 @@ Console.WriteLine($"*****Bem-vindo a nossa loja virtual!*****");
 Console.WriteLine($"*****************************************");
 Console.WriteLine($"");
 
+Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
+Console.ReadLine();
+
 //Menu
 do
 {   

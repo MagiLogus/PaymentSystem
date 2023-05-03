@@ -35,22 +35,23 @@ namespace PaymentSystem
         public int Qntdparcelas;
         public override void Pagar()
         {
-            Console.WriteLine($" Sua escolha foi o 'Credito' ");
-            Console.WriteLine($" Voce gostaria de parcelar ");
-            Console.WriteLine($" Use somente 'S' ou 'N' ");
+            Console.WriteLine($"");
+            Console.WriteLine($"Obrigado por optar por pagar com cartão de crédito");
+            Console.WriteLine($"Gostaria de parcelar sua compra?");
+            Console.WriteLine($"Para prosseguir, por favor, digite 'S' para 'sim' ou 'N' para 'não'.");
 
             char resp = char.Parse(Console.ReadLine().ToLower());
             if (resp == 's')
             {
                 Console.Clear();
-                Console.WriteLine($" Certo voce ira parcelar");
-                Console.WriteLine($" Nós só parcelamos em ate 12X ");
+                Console.WriteLine($"Certo, você optou por parcelar sua compra.");
+                Console.WriteLine($"Gostaríamos de lembrar que nossa loja parcela em até 12X.");
                 Thread.Sleep(5000);
                 Console.Clear();
 
                 volta:
-                Console.WriteLine($"Em numeros apenas");
-                Console.Write($"Quantas parcelas voce gostaria de fazer:");
+                Console.WriteLine($"Por favor, informe o número de parcelas desejado apenas com números:");
+                Console.Write($"Quantas parcelas você gostaria de fazer? Por favor, informe apenas com números:");
                 Qntdparcelas = int.Parse(Console.ReadLine());
                 if (Qntdparcelas <= 6)
                 {
@@ -64,7 +65,7 @@ namespace PaymentSystem
 
                 else if (Qntdparcelas >12)
                 {
-                    Console.WriteLine($"Nao parcelamos mais que 12X");
+                    Console.WriteLine($"Lamentamos informar que não é possível parcelar em mais de 12X.");
                     Thread.Sleep(3000);
                     goto volta;
                     
@@ -85,7 +86,7 @@ namespace PaymentSystem
 
             else
             {
-                Console.WriteLine($"Voce ira fazer o pagamento a vista ");
+                Console.WriteLine($"Obrigado por optar pelo pagamento à vista.");
                 Console.WriteLine($"{valor_inicial:C2}");
                 
             }
