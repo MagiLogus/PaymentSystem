@@ -4,6 +4,7 @@ using PaymentSystem;
 Credito cartao = new Credito();
 Boleto boleto = new Boleto();
 Credito credito = new Credito();
+Debito minhaConta = new Debito();
 
 int opcao;
 
