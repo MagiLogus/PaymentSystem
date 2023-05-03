@@ -39,13 +39,13 @@ namespace PaymentSystem
             Console.WriteLine($" Voce gostaria de parcelar ");
             Console.WriteLine($" Use somente 'S' ou 'N' ");
 
-            char resp = char.Parse(Console.ReadLine());
+            char resp = char.Parse(Console.ReadLine().ToLower());
             if (resp == 's')
             {
                 Console.Clear();
                 Console.WriteLine($" Certo voce ira parcelar");
-                Console.WriteLine($" Nos so parcelamos em ate 12X ");
-                Thread.Sleep(3000);
+                Console.WriteLine($" Nós só parcelamos em ate 12X ");
+                Thread.Sleep(5000);
                 Console.Clear();
 
                 volta:
