@@ -21,14 +21,14 @@ namespace PaymentSystem
             num_meses = Qntdparcelas;
             double valor_final = valor_inicial * Math.Pow(1 + taxa_juros, num_meses);
 
-            Console.WriteLine($"Valor inicial: R${valor_inicial:F2}");
+            Console.WriteLine($"Valor inicial: R${valor_inicial:C2}");
             Console.WriteLine($"Taxa de juros: {taxa_juros:P}");
             Console.WriteLine($"Número de meses: {num_meses}");
-            Console.WriteLine($"Valor final: R${valor_final:F2}");
+            Console.WriteLine($"Valor final: R${valor_final:C2}");
         }
 
 
-        public float Limite;
+        private float Limite;
         public int Qntdparcelas;
         public override void Pagar()
         {
