@@ -44,10 +44,7 @@ namespace PaymentSystem
             Console.WriteLine($"Valor a ser pago: R${valorComDesconto.ToString("0.00")}");
         }
 
-
-        
-        
-         
-
     }
+
+    
 }
