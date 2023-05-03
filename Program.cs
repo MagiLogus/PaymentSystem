@@ -44,6 +44,8 @@ switch (opcao)
         break;
     case 3:
         boleto.Registrar();
+        Console.Write("Aperte <Enter> para sair... ");
+        while (Console.ReadKey(true).Key != ConsoleKey.Enter) {}
         break;
     case 4:
         credito.Pagar();
