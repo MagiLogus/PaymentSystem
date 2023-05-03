@@ -32,13 +32,12 @@ namespace PaymentSystem
              Console.WriteLine(@$"
             Cartão salvo com sucesso!
             ╭-------------------------------------------------╮
-            |               Cartão {this.Bandeira}            |
+            |               Cartão {this.Bandeira}                |
             | Número do cartão: {this.NumeroCartao}           |
-            | Titular: {this.Titular}                         |
-            | Bandeira: {this.Bandeira}    CVV:{this.Cvv}     |
+            | Titular: {this.Titular}                                  |
+            | Bandeira: {this.Bandeira}    CVV:{this.Cvv}                |
             ╰-------------------------------------------------╯
-            ");
-            
+            ");  
             return"";
         }
     }
