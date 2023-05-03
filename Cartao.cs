@@ -2,7 +2,7 @@ using System;
 
 namespace PaymentSystem
 {
-    public abstract class Cartao
+    public abstract class Cartao : Pagamento
     {
         public string Bandeira { get; set; }
         public string NumeroCartao { get; set; }
