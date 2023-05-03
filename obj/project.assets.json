@@ -8,11 +8,16 @@
     "net7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\836574281\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\33984578865\\.nuget\\packages\\": {}
+>>>>>>> dfd57dd463c0b0180155991ff07611a2b9eec1fd
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\836574281\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
       "projectName": "PaymentSystem",
       "projectPath": "C:\\Users\\836574281\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\836574281\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\33984578865\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
+      "projectName": "PaymentSystem",
+      "projectPath": "C:\\Users\\33984578865\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
+      "packagesPath": "C:\\Users\\33984578865\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\33984578865\\Desktop\\PaymentSystem\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\33984578865\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> dfd57dd463c0b0180155991ff07611a2b9eec1fd
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
