@@ -1,10 +1,13 @@
 ﻿using System;
 using PaymentSystem;
 
+Console.Clear();
+
 Credito cartao = new Credito();
 Boleto boleto = new Boleto();
 Credito credito = new Credito();
 Debito minhaConta = new Debito();
+Pagamento pagamento = new Pagamento();
 
 int opcao;
 
@@ -15,11 +18,13 @@ Console.WriteLine($"*****************************************");
 Console.WriteLine($"");
 
 Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
-Console.ReadLine();
+pagamento.ReceberValor();
 
 //Menu
+
 do
 {   
+Console.WriteLine($"");
 Console.WriteLine($"*****Menu inicial*****");
 Console.WriteLine($"");
 Console.WriteLine($"Selecione uma opção:");
@@ -34,6 +39,8 @@ Console.WriteLine($"");
 
 opcao = int.Parse(Console.ReadLine());
 
+Console.Clear();
+
 switch (opcao)
 {
     case 1:
@@ -44,6 +51,8 @@ switch (opcao)
         break;
     case 3:
         boleto.Registrar();
+        Console.Write("Aperte <Enter> para sair... ");
+        while (Console.ReadKey(true).Key != ConsoleKey.Enter) {}
         break;
     case 4:
         credito.Pagar();
@@ -52,9 +61,11 @@ switch (opcao)
         minhaConta.Pagar();
         break;
     case 6:
+        Console.WriteLine($"{pagamento.Cancelar()}");
         break;        
     case 0:
         Console.WriteLine($"Saindo do sistema...");
+        Console.Clear();
         break;
     default:
         Console.WriteLine($"Opção inválida. Tente novamente.");
