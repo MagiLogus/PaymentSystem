@@ -49,6 +49,7 @@ switch (opcao)
         credito.Pagar();
         break;
     case 5:
+        minhaConta.Pagar();
         break;
     case 6:
         break;        
