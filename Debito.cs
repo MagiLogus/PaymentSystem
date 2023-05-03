@@ -1,34 +1,61 @@
-namespace PaymentSystem
+namespace PaymentSystem;
+public class Debito
 {
-    public class Debito
+    private int numeroBanco;
+    private int NumeroAgencia;
+    private int NumeroConta;
+    private string nometitular;
+    protected double saldo;
+    public Debito
+    (int numeroBanco, NumeroAgencia, NumeroConta, string Nometitular)
     {
-        private int numeroBanco;
-        private int numeroAgencia;
-        private int numeroConta;
-        private string titular ContaCorrente;
-        protected double saldo;
-        public DebitoContaCorrente
-        (int numeroBanco, numeroAgencia, numeroConta, string titular)
+    this. NumeroBanco = NumeroBanco;
+    this. NumeroAgencia = NumeroAgencia;
+    this. NumeroConta = NumeroConta;
+    this. nometitular= Nometitular;
+    {}     
+    return this.saldo;
+    }
+
+        public Debito(int numeroBanco, int numeroAgencia, int numeroConta, string nometitular, double saldo, double get, string nome)
         {
-        this. numeroBanco = numeroBanco;
-        this. numeroAgencia = numeroAgencia;
-        this. numeroConta = numeroConta;
-        this.titular = titular;
+            this.numeroBanco = numeroBanco;
+            NumeroAgencia = numeroAgencia;
+            NumeroConta = numeroConta;
+            this.nometitular = nometitular;
+            this.saldo = saldo;
+            this.get = get;
+            Nome = nome;
         }
-        // nao sei se está correto
-        public boolean sacar(double quantia) {
-        if (this.saldo < quantia ) {
-        return false;
-        } else {
-        this.saldo -= quantia;
+    }
+
+public class Debito
+{
+    private boolean debitar(double valor)
+    {
+        this.saldo += valor;
         return true;
+    }
+}
+
+public class Debito
+{
+    private const bool V = true;
+    private double saldo;
+    public bool debito(double Debito)
+    {
+        if (this.saldo >= Debito);
+        {
+            return V;
         }
-        //Nao sei se está correto
-        public boolean debitar(double valor) {
-        this.saldo += valor
-        return true;
-        public double get Saldo(){
-        return this.saldo;
+        else
+        {
+            return false;
+
         }
     }
 }
+
+
+
+   
