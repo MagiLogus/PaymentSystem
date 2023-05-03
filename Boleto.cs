@@ -39,12 +39,13 @@ namespace PaymentSystem
             
             // Exibir o código de barras 
             Console.WriteLine($"Código de barras: {numeroBoleto}");
-
+            
+            // // Exibir o código de barras e valor a ser pago
             Console.WriteLine($"Valor a ser pago: R${valorComDesconto.ToString("0.00")}");
         }
 
 
-        // // Exibir o código de barras e valor a ser pago
+        
         
          
 
