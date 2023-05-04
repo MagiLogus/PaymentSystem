@@ -20,7 +20,10 @@ namespace PaymentSystem
         }
 
         public void DataVencimento(){
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine($"Vencimento em {Data.ToString("dd/MM/yyyy")}");
+            Console.ResetColor();
             
         }
     }

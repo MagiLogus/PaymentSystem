@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paulo Gonçalves\\Desktop\\PaymentSystem\\PaymentSystem.csproj": {}
+    "C:\\Users\\Lucas\\Desktop\\PaymentSystem\\PaymentSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paulo Gonçalves\\Desktop\\PaymentSystem\\PaymentSystem.csproj": {
+    "C:\\Users\\Lucas\\Desktop\\PaymentSystem\\PaymentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paulo Gonçalves\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
         "projectName": "PaymentSystem",
-        "projectPath": "C:\\Users\\Paulo Gonçalves\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
-        "packagesPath": "C:\\Users\\Paulo Gonçalves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paulo Gonçalves\\Desktop\\PaymentSystem\\obj\\",
+        "projectPath": "C:\\Users\\Lucas\\Desktop\\PaymentSystem\\PaymentSystem.csproj",
+        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas\\Desktop\\PaymentSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Paulo Gonçalves\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
