@@ -2,38 +2,40 @@ namespace PaymentSystem
 {
     public class Debito : Cartao
     {
-       private float saldo = 0.0f;
+        public float saldo { get; private set; } = 5000;
 
-       public float ConsultarSaldo()
-       {
-            return saldo;
-       }
+        public override void Pagar()
+        {
+            Console.WriteLine($"");
+            Console.WriteLine($"Obrigado por optar por pagar com cartão de débito");
+            Thread.Sleep(2000);
+            Console.WriteLine($"O seu saldo atual é de {this.saldo}");
+            Thread.Sleep(3500);
 
-       public void AtualizarSaldo(float valor)
-       {
-            saldo += valor;
-       }
+            Console.WriteLine("Deseja prosseguir com o pagamento?");
+            Console.WriteLine("Digite 'S' para 'sim' ou 'N' para 'não'.");
+            char resposta = char.Parse(Console.ReadLine().ToLower());
 
-       public override void Pagar()
-       {
-          Console.WriteLine($"");
-          Console.WriteLine($"Obrigado por optar por pagar com cartão de debito");
-          Thread.Sleep(3500);
-          Console.WriteLine($"O seu saldo é de {this.saldo}");
-          
-          Console.WriteLine($"Digite (S) para efetuar o pagamento com a forma de débito e (N) para cancelar!");
-          char resp = char.Parse(Console.ReadLine().ToLower());
-          
-          if (resp == 's')
-          {
-               Console.WriteLine($"Pagamento efetuado com sucesso!");
-               
-          }
-          else
-          {
-               Console.WriteLine($"Forma de pagamento em débito cancelado!");
-
-          } 
-       }
+            if (resposta == 's')
+            {
+                if (Valor > saldo)
+                {
+                    Console.WriteLine($"Saldo insuficiente!");
+                }
+                else if (saldo >= Valor)
+                {
+                    float novoSaldo = saldo - Valor;
+                    Console.WriteLine($"Pagamento efetuado com sucesso! O seu novo saldo é de: R${novoSaldo}");
+                }
+                else
+                {
+                    Console.WriteLine($"Opção inválida, tente novamente!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Operação cancelada pelo usuário.");
+            }
+        }
     }
 }

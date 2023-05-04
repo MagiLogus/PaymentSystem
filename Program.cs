@@ -6,7 +6,7 @@ Console.Clear();
 Credito cartao = new Credito();
 Boleto boleto = new Boleto();
 Credito credito = new Credito();
-Debito minhaConta = new Debito();
+Debito debito = new Debito();
 Pagamento pagamento = new Pagamento();
 
 int opcao;
@@ -16,9 +16,6 @@ Console.WriteLine($"*****************************************");
 Console.WriteLine($"*****Bem-vindo a nossa loja virtual!*****");
 Console.WriteLine($"*****************************************");
 Console.WriteLine($"");
-
-Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
-pagamento.ReceberValor();
 
 //Menu
 
@@ -33,7 +30,6 @@ Console.WriteLine($"[2] - Exibir Cartão registrado: ");
 Console.WriteLine($"[3] - Pagamento em boleto: ");
 Console.WriteLine($"[4] - Pagamento em cartão de crédito: ");
 Console.WriteLine($"[5] - Pagamento em cartão de débito: ");
-Console.WriteLine($"[6] - Cancelar operação ");
 Console.WriteLine($"[0] - Sair do sistema");
 Console.WriteLine($"");
 
@@ -50,19 +46,22 @@ switch (opcao)
         cartao.ExibirCartao();
         break;
     case 3:
+        Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
+        boleto.Valor = float.Parse(Console.ReadLine());
         boleto.Registrar();
         Console.Write("Aperte <Enter> para sair... ");
         while (Console.ReadKey(true).Key != ConsoleKey.Enter) {}
         break;
     case 4:
+        Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
+        credito.Valor = float.Parse(Console.ReadLine());
         credito.Pagar();
         break;
     case 5:
-        minhaConta.Pagar();
-        break;
-    case 6:
-        Console.WriteLine($"{pagamento.Cancelar()}");
-        break;        
+        Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
+        debito.Valor = float.Parse(Console.ReadLine());
+        debito.Pagar();
+        break;       
     case 0:
         Console.WriteLine($"Saindo do sistema...");
         Console.Clear();

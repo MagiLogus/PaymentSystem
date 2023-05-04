@@ -6,7 +6,8 @@ namespace PaymentSystem
         DateTime Data = DateTime.Now;
         public float Valor;
         
-        public string Cancelar(){
+        public string Cancelar()
+        {
             Console.WriteLine($"Cancelando opreacao...");
             Thread.Sleep(1000);
 
@@ -16,10 +17,6 @@ namespace PaymentSystem
             Console.Clear();
             
             return "";            
-        }
-
-        public void ReceberValor(){
-            Valor = float.Parse(Console.ReadLine());
         }
 
         public void DataVencimento(){

@@ -13,7 +13,26 @@ namespace PaymentSystem
         public string SalvarCartao()
         {
             Console.WriteLine($"Informe a bandeira do seu cartão: ");
-            this.Bandeira = Console.ReadLine();
+            Console.WriteLine("1 - Visa");
+            Console.WriteLine("2 - Mastercard");
+            Console.WriteLine("3 - American Express");
+            string escolha = Console.ReadLine();
+
+            switch(escolha)
+            {
+                case "1":
+                    this.Bandeira = "Visa";
+                    break;
+                case "2":
+                    this.Bandeira = "Mastercard";
+                    break;
+                case "3":
+                    this.Bandeira = "American Express";
+                    break;
+                default:
+                    Console.WriteLine("Bandeira inválida.");
+                    break;
+            }
 
             Console.WriteLine($"Informe o número do seu cartão: ");
             this.NumeroCartao = Console.ReadLine();
@@ -23,6 +42,9 @@ namespace PaymentSystem
 
             Console.WriteLine($"Informe o codigo de segurança do seu cartão: ");
             this.Cvv = Console.ReadLine();
+
+            Console.WriteLine($"Cartão salvo com sucesso!");
+            
     
             return "";
         }
@@ -30,13 +52,15 @@ namespace PaymentSystem
         public string ExibirCartao()
         {
              Console.WriteLine(@$"
-            Cartão salvo com sucesso!
-            ╭-------------------------------------------------╮
-            |               Cartão {this.Bandeira}                |
-            | Número do cartão: {this.NumeroCartao}           |
-            | Titular: {this.Titular}                                  |
-            | Bandeira: {this.Bandeira}    CVV:{this.Cvv}                |
-            ╰-------------------------------------------------╯
+                    ┌─────────────────────────────────────────────┐
+                                  Cartão {this.Bandeira}    
+                                                                
+                       Número do cartão: {this.NumeroCartao} 
+                       Titular: {this.Titular}                 
+                       Bandeira: {this.Bandeira}           
+                       CVV:{this.Cvv} 
+                                                                
+                    └─────────────────────────────────────────────┘
             ");  
             return"";
         }
