@@ -22,6 +22,9 @@
 
  O programa possui um menu de opções que permite aos usuários escolher o tipo de pagamento desejado e informar o valor da compra. Com base nesses dados, o sistema realizará os cálculos necessários e exibirá o valor a ser pago de acordo com as regras de negócio estabelecidas. Além disso, o projeto inclui a criação das classes de acordo com o diagrama de classes UML fornecido.
 
+ ![UML do projeto.](/readme/LojaPOO.jpg)
+</div>
+
 ![Descrição do projeto Payment, onde se tem uma imagem do menu inicial.](/readme/imagem%20sistema.png)
 </div>
 
