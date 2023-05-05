@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20CONCLUÍDO&color=green&style=for-the-badge" #vitrinedev/>
+   <img src="https://img.shields.io/static/v1?label=STATUS&message=PROJETO%20CONCLU%C3%8DDO&color=green&style=for-the-badge" #vitrinedev/>
 </p>
 
 ### Tópicos 
@@ -40,6 +40,9 @@
 ## Ferramentas utilizadas
 
 <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="border-radius: 30px" target="_blank"></a>
+<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" style="border-radius: 30px" target="_blank"></a>
+<img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" style="border-radius: 30px" target="_blank"></a>
+
 
 ## Acesso ao sistema
 
