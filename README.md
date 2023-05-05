@@ -47,7 +47,7 @@
 <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" style="border-radius: 30px" target="_blank"></a>
 
 
-## Acesso ao sistema
+## Acesso ao projeto
 
 1.Abra o navegador da Web e acesse o repositório do projeto no GitHub.
 
