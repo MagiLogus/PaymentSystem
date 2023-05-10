@@ -3,86 +3,70 @@
 </h1>
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=PROJETO%20EM%20ANDAMENTO&color=RED&style=for-the-badge" #vitrinedev/>
+   <img src="https://img.shields.io/static/v1?label=STATUS&message=PROJETO%20CONCLU%C3%8DDO&color=green&style=for-the-badge" #vitrinedev/>
 </p>
 
 ### Tópicos 
 
 - [Descrição do projeto](#descrição-do-projeto)
 - [Funcionalidades](#funcionalidades)
-- [Página](#página)
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
-- [Acesso à página](#acesso-à-página)
-- [Desenvolvedor](#desenvolvedor)
+- [Acesso ao sistema](#acesso-ao-sistema)
+- [Desenvolvedores](#desenvolvedores)
 
 ## Descrição do projeto 
 
 <div align="justify">
 
- O projeto Gamer é um web site desenvolvido com HTML, CSS e JavaScript, utilizando técnicas de Flexbox, Grid Layout e Position aprendidas durante as aulas. A página inicial (Home) é o ponto de entrada para o conteúdo relacionado a jogos, jogadores, equipes, e outras seções, como Login e notícias, foram adicionadas para fornecer informações adicionais.
+ O projeto é um sistema de pagamento para uma loja virtual que permite aos clientes realizar transações usando diferentes formas de pagamento, como boleto bancário, cartão de crédito ou cartão de débito. O sistema também oferece descontos e juros com base nas regras de negócio da loja. 
 
-O site foi construído usando o modelo Mobile First, garantindo que ele seja totalmente responsivo em dispositivos móveis, e em seguida, foram adicionadas as media queries para desktop.
+ O programa possui um menu de opções que permite aos usuários escolher o tipo de pagamento desejado e informar o valor da compra. Com base nesses dados, o sistema realizará os cálculos necessários e exibirá o valor a ser pago de acordo com as regras de negócio estabelecidas. Além disso, o projeto inclui a criação das classes de acordo com o diagrama de classes UML fornecido.
 
-A identidade visual do projeto foi criada e extraída do Figma, garantindo uma aparência consistente e alinhada com as expectativas do cliente. Em resumo, o projeto Gamer é um ótimo exemplo do uso de técnicas avançadas para criar um site funcional e visualmente atraente.
+ ![UML do projeto.](/readme/LojaPOO.jpg)
+</div>
 
-![Descrição do projeto Gamer, onde se tem uma imagem da página inicial.](/readme/ImagemDescrição.png)
+![Descrição do projeto Payment, onde se tem uma imagem do menu inicial.](/readme/imagem%20sistema.png)
 </div>
 
 ## Funcionalidades
 
-:heavy_check_mark: `Funcionalidade 1:` Menus criados com JavaScript: O site apresenta menus criados com JavaScript que aparecem ao clicar em um botão, permitindo a navegação fácil e intuitiva entre as diferentes seções do site.
+:heavy_check_mark: `Funcionalidade 1:` O sistema possui um menu de opções que permite aos usuários selecionar a forma de pagamento desejada e inserir o valor da compra.
 
-:heavy_check_mark: `Funcionalidade 2:` Campos de preenchimento: O site também possui campos de preenchimento, que permitem aos usuários inserir informações, como nome de usuário e senha para fazer login.
+:heavy_check_mark: `Funcionalidade 2:` O sistema oferece a opção de pagamento em boleto bancário, que concede um desconto de 12% no valor da compra e exibe o código de barras do boleto para pagamento.
 
-:heavy_check_mark: `Funcionalidade 3:` Vídeos de banner: O site apresenta vídeos de banner na página inicial, que são exibidos automaticamente e fornecem uma visão geral do conteúdo apresentado no site.
+:heavy_check_mark: `Funcionalidade 3:` O sistema oferece a opção de pagamento em cartão de crédito, que permite o parcelamento da compra em até 12 vezes, com juros de 5% para parcelas de 1 a 6 vezes e juros de 8% para parcelas de 7 a 12 vezes.
 
-:heavy_check_mark: `Funcionalidade 4:` Efeitos visuais: O site possui efeitos de transição e sombreamento que foram aplicados em diversos elementos interativos, como menus, botões e links.
+:heavy_check_mark: `Funcionalidade 4:` O sistema oferece a opção de pagamento em cartão de débito, que permite o pagamento à vista do valor da compra, sem descontos ou juros.
 
-## Página 
-
-<div align="center">
-
-![Página do Projeto](/readme/homeMobile.gif)
-
-  </div>
+:heavy_check_mark: `Funcionalidade 5:` O sistema realiza automaticamente os cálculos necessários com base nas informações fornecidas pelo usuário, exibindo o valor a ser pago de acordo com as regras de negócio da loja virtual.
 
 ## Ferramentas utilizadas
 
-<div align="left">
-<img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" style="border-radius: 30px" target="_blank"></a>
 <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="border-radius: 30px" target="_blank"></a>
-<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" style="border-radius: 30px" target="_blank"></a>
-<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" style="border-radius: 30px" target="_blank"></a>
-<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" style="border-radius: 30px" target="_blank"></a>
- </div>
+<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" style="border-radius: 30px" target="_blank"></a>
+<img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" style="border-radius: 30px" target="_blank"></a>
 
-## Acesso à página
 
-Você pode [acessar a página do projeto](https://magilogus.github.io/GamerProject/), sendo também possível [acessar o protótipo de alta fidelidade](https://www.figma.com/file/JfMPPyVEhQX6RGTSjm4i5z/Gamer-Project?t=fn5aQaiHI13M8dON-0) no Figma. 
+## Acesso ao projeto
 
-## Desenvolvedor
+1.Abra o navegador da Web e acesse o repositório do projeto no GitHub.
 
-<div align="left">
+2.Clique no botão "Code" e selecione a opção "Download ZIP" para baixar o arquivo compactado do projeto para o seu computador.
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+3.Extraia o arquivo ZIP em uma pasta de sua escolha.
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+4.Abra o Visual Studio Code e selecione "File" > "Open Folder" para abrir a pasta que contém o projeto.
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+5.Abra o terminal do Visual Studio Code pressionando "Ctrl + `", ou selecionando "Terminal" > "New Terminal".
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+6.No terminal, execute o comando "dotnet run" para construir e executar o projeto. Certifique-se de que você tem o .NET Core SDK instalado em seu computador antes de executar este comando.
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+7.O programa será executado e você poderá interagir com o menu de opções apresentado. Certifique-se de seguir as instruções apresentadas no programa para inserir os valores corretos.
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Gonçalves</sub>](https://github.com/MagiLogus) | 
-| :---: | 
+## Desenvolvedores
 
-</div>
+| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Oliveira</sub>](https://github.com/MagiLogus) |  [<img src="https://avatars.githubusercontent.com/u/125323194?v=4" width=115><br><sub>Lucas Oliveira</sub>](https://github.com/Lucca-gOn)  | [<img src="https://avatars.githubusercontent.com/u/125275458?v=4" width=115><br><sub>Richard Passarelli</sub>](https://github.com/RichardRichk)  | [<img src="https://avatars.githubusercontent.com/u/84160431?v=4" width=115><br><sub>Marcio Wagner</sub>](https://github.com/mwmjunior)  | [<img src="https://avatars.githubusercontent.com/u/106753653?v=4" width=115><br><sub>Eduardo Alves</sub>](https://github.com/dudugt)  | [<img src="https://avatars.githubusercontent.com/u/125280697?v=4" width=115><br><sub>Tania Santos</sub>](https://github.com/Tania1912Senai)  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 
 
 [def]: #

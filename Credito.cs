@@ -58,6 +58,7 @@ namespace PaymentSystem
 
         public override void Pagar()
         {
+            SalvarCartao();
             Console.Clear();
             if (Limite < Valor)
             {
