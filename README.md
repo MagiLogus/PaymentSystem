@@ -11,7 +11,7 @@
 - [Descrição do projeto](#descrição-do-projeto)
 - [Funcionalidades](#funcionalidades)
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
-- [Acesso ao sistema](#acesso-ao-sistema)
+- [Acesso ao projeto](#acesso-ao-projeto)
 - [Desenvolvedores](#desenvolvedores)
 
 ## Descrição do projeto 
