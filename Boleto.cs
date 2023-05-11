@@ -72,6 +72,7 @@ namespace PaymentSystem
             }
             else
             {
+                Console.Beep(1200,1200);
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Opção inválida.");

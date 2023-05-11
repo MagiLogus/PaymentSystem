@@ -1,0 +1,15 @@
+C:\Users\45811737874\Desktop\PaymentSystem\bin\Debug\net7.0\PaymentSystem.exe
+C:\Users\45811737874\Desktop\PaymentSystem\bin\Debug\net7.0\PaymentSystem.deps.json
+C:\Users\45811737874\Desktop\PaymentSystem\bin\Debug\net7.0\PaymentSystem.runtimeconfig.json
+C:\Users\45811737874\Desktop\PaymentSystem\bin\Debug\net7.0\PaymentSystem.dll
+C:\Users\45811737874\Desktop\PaymentSystem\bin\Debug\net7.0\PaymentSystem.pdb
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.csproj.AssemblyReference.cache
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.AssemblyInfoInputs.cache
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.AssemblyInfo.cs
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.csproj.CoreCompileInputs.cache
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.dll
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\refint\PaymentSystem.dll
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.pdb
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\PaymentSystem.genruntimeconfig.cache
+C:\Users\45811737874\Desktop\PaymentSystem\obj\Debug\net7.0\ref\PaymentSystem.dll

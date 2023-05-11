@@ -12,7 +12,7 @@ namespace PaymentSystem
         
         void juros()
         {
-            if (Parcelas <= 6)
+            if (Parcelas >0 && Parcelas <= 6)
             {
                 TaxaJuros = 0.05f;
             }
@@ -46,6 +46,9 @@ namespace PaymentSystem
                 Console.WriteLine("Pagamento efetuado com sucesso!");
                 Console.WriteLine($"Valor: R${ValorFinal:F2}");
                 Console.ResetColor();
+                Console.Write("Aperte <Enter> para sair... ");
+                while (Console.ReadKey(true).Key != ConsoleKey.Enter);
+                Console.Clear();
             }
             else
             {
@@ -90,7 +93,7 @@ namespace PaymentSystem
                     Console.Clear();
                     Console.WriteLine($"Certo, você optou por parcelar sua compra.");
                     Console.WriteLine($"Gostaríamos de lembrar que nossa loja parcela em até 12X.");
-                    Thread.Sleep(5000);
+                    Thread.Sleep(2000);
                     Console.Clear();
                     Console.ResetColor();
 
@@ -114,12 +117,13 @@ namespace PaymentSystem
                         Console.ResetColor();
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine($"Lamentamos informar que não é possível parcelar em mais de 12X.");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(2000);
                         Console.ResetColor();
                         goto volta;
                     }
                     else
                     {
+                        Console.Beep(1200,1200);
                         Console.ResetColor();
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine($"Houve um erro nos seu dados, verifique novamente.");
@@ -148,6 +152,9 @@ namespace PaymentSystem
                         Console.WriteLine("Pagamento efetuado com sucesso!");
                         Console.WriteLine($"Valor: R${Valor:F2}");
                         Console.ResetColor();
+                        Console.Write("Aperte <Enter> para sair... ");
+                        while (Console.ReadKey(true).Key != ConsoleKey.Enter);
+                        Console.Clear();
                     }
                     else
                     {
@@ -159,6 +166,7 @@ namespace PaymentSystem
                 }
                 else
                 {   
+                    Console.Beep(1200,1200);
                     Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Opção inválida.");

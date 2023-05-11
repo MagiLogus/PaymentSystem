@@ -6,6 +6,7 @@ namespace PaymentSystem
 
         public override void Pagar()
         {
+            SalvarCartao();
             Console.Clear();
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -29,16 +30,20 @@ namespace PaymentSystem
             Console.WriteLine("Digite 'S' para 'sim' ou 'N' para 'não':");
             Console.ResetColor();
             char resposta = char.Parse(Console.ReadLine().ToLower());
-            Thread.Sleep(3500);
+            Thread.Sleep(2500);
             Console.Clear();
             if (resposta == 's')
             {
                 if (Valor > saldo)
                 {
+                    Console.Beep(1200,1200);
                     Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Saldo insuficiente!");
                     Console.ResetColor();
+                    Console.Write("Aperte <Enter> para confirmar... ");
+                    while (Console.ReadKey(true).Key != ConsoleKey.Enter);
+                    Console.Clear();
                 }
                 else if (saldo >= Valor)
                 {
@@ -47,12 +52,16 @@ namespace PaymentSystem
                     float novoSaldo = saldo - Valor;
                     Console.WriteLine($"Pagamento efetuado com sucesso!");
                     Console.WriteLine($"O seu novo saldo é de: R${novoSaldo}");
-                    Thread.Sleep(3500);
+                    Thread.Sleep(3000);
+                    Console.Write("Aperte <Enter> para confirmar... ");
+                    while (Console.ReadKey(true).Key != ConsoleKey.Enter);
+                    Console.Clear();
                     
                     Console.ResetColor();
                 }
                 else
                 {
+                    Console.Beep(1200,1200);
                     Console.ResetColor();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Opção inválida, tente novamente!");

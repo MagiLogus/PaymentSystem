@@ -29,11 +29,9 @@ Console.WriteLine($"");
 Console.WriteLine($"*****Menu inicial*****");
 Console.WriteLine($"");
 Console.WriteLine($"Selecione uma opção:");
-Console.WriteLine($"[1] - Registrar Cartão: ");
-Console.WriteLine($"[2] - Exibir Cartão registrado: ");
-Console.WriteLine($"[3] - Pagamento em boleto: ");
-Console.WriteLine($"[4] - Pagamento em cartão de crédito: ");
-Console.WriteLine($"[5] - Pagamento em cartão de débito: ");
+Console.WriteLine($"[1] - Pagamento em boleto: ");
+Console.WriteLine($"[2] - Pagamento em cartão de crédito: ");
+Console.WriteLine($"[3] - Pagamento em cartão de débito: ");
 Console.WriteLine($"[0] - Sair do sistema");
 Console.WriteLine($"");
 Console.ResetColor();
@@ -45,12 +43,6 @@ Console.Clear();
 switch (opcao)
 {
     case 1:
-        cartao.SalvarCartao();
-        break;
-    case 2:
-        cartao.ExibirCartao();
-        break;
-    case 3:
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
@@ -61,7 +53,7 @@ switch (opcao)
         Console.Write("Aperte <Enter> para sair... ");
         while (Console.ReadKey(true).Key != ConsoleKey.Enter) {}
         break;
-    case 4:
+    case 2:
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
@@ -69,7 +61,7 @@ switch (opcao)
         credito.Valor = float.Parse(Console.ReadLine());
         credito.Pagar();
         break;
-    case 5:
+    case 3:
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine($"Por favor, informe o valor da conta a ser paga: ");
@@ -85,6 +77,7 @@ switch (opcao)
         Console.Clear();
         break;
     default:
+        Console.Beep(1200,1200);
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Opção inválida. Tente novamente.");
