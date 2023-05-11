@@ -65,7 +65,7 @@
 
 ## Desenvolvedores
 
-| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Oliveira</sub>](https://github.com/MagiLogus) |  [<img src="https://avatars.githubusercontent.com/u/125323194?v=4" width=115><br><sub>Lucas Oliveira</sub>](https://github.com/Lucca-gOn)  | [<img src="https://avatars.githubusercontent.com/u/125275458?v=4" width=115><br><sub>Richard Passarelli</sub>](https://github.com/RichardRichk)  | [<img src="https://avatars.githubusercontent.com/u/84160431?v=4" width=115><br><sub>Marcio Wagner</sub>](https://github.com/mwmjunior)  | [<img src="https://avatars.githubusercontent.com/u/106753653?v=4" width=115><br><sub>Eduardo Alves</sub>](https://github.com/dudugt)  | [<img src="https://avatars.githubusercontent.com/u/125280697?v=4" width=115><br><sub>Tania Santos</sub>](https://github.com/Tania1912Senai)  |
+| [<img src="https://avatars.githubusercontent.com/u/125275514?v=4" width=115><br><sub>Paulo Oliveira</sub>](https://github.com/MagiLogus) |  [<img src="https://avatars.githubusercontent.com/u/125323194?v=4" width=115><br><sub>Lucas Oliveira</sub>](https://github.com/Lucca-gOn)  | [<img src="https://avatars.githubusercontent.com/u/125275458?v=4" width=115><br><sub>Richard Passarelli</sub>](https://github.com/RichardRichk)  | [<img src="https://avatars.githubusercontent.com/u/84160431?v=4" width=115><br><sub>Marcio Wagner</sub>](https://github.com/mwmjunior)  | [<img src="https://avatars.githubusercontent.com/u/106753653?v=4" width=115><br><sub>Eduardo Alves</sub>](https://github.com/EduardoAlves27)  | [<img src="https://avatars.githubusercontent.com/u/125280697?v=4" width=115><br><sub>Tania Santos</sub>](https://github.com/Tania1912Senai)  |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 
 
