@@ -29,6 +29,7 @@ namespace PaymentSystem
             Console.WriteLine($"Taxa de juros: {TaxaJuros:P}");
             Console.WriteLine($"Número de meses: {Meses}");
             Console.WriteLine($"Valor final: R${ValorFinal:F2}");
+            Console.WriteLine($"Valor por mes: R${(ValorFinal / Parcelas):F2}");
             Console.ResetColor();
 
             Console.ResetColor();
@@ -45,6 +46,7 @@ namespace PaymentSystem
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Pagamento efetuado com sucesso!");
                 Console.WriteLine($"Valor: R${ValorFinal:F2}");
+                Console.WriteLine($"Valor por mes: R${(ValorFinal / Parcelas):F2}");
                 Console.ResetColor();
                 Console.Write("Aperte <Enter> para sair... ");
                 while (Console.ReadKey(true).Key != ConsoleKey.Enter);
@@ -104,22 +106,22 @@ namespace PaymentSystem
                     Console.Write($"Quantas parcelas você gostaria de fazer? Por favor, informe apenas com números:");
                     Console.ResetColor();
                     Parcelas = int.Parse(Console.ReadLine());
-                    if (Parcelas <= 6)
+                    if (Parcelas <1 || Parcelas > 12)
+                    {
+                        Console.ResetColor();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"Lamentamos informar que não é possível parcelar em {Parcelas}x");
+                        Thread.Sleep(2000);
+                        Console.ResetColor();
+                        goto volta;
+                    }
+                    else if (Parcelas <= 6)
                     {
                         juros();
                     }
                     else if (Parcelas >= 7 && Parcelas <= 12)
                     {
                         juros();
-                    }
-                    else if (Parcelas > 12)
-                    {
-                        Console.ResetColor();
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"Lamentamos informar que não é possível parcelar em mais de 12X.");
-                        Thread.Sleep(2000);
-                        Console.ResetColor();
-                        goto volta;
                     }
                     else
                     {
