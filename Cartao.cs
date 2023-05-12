@@ -106,7 +106,7 @@ namespace PaymentSystem
                 Console.ResetColor();
                 this.Cvv = Console.ReadLine();
 
-                if (Cvv.Length <3)
+                if (Cvv.Length <3 || Cvv.Length >3)
                     {
                         Console.Beep(1200,1200);
                         Console.WriteLine($"O Cvv do cartao deve conter ao menos 3 caracteres!");
@@ -118,7 +118,7 @@ namespace PaymentSystem
                         Console.WriteLine($"Cvv cadastrado!"); 
                         Thread.Sleep(1000);                   
                     }
-            }while(Cvv.Length <3);
+            }while(Cvv.Length <3 || Cvv.Length >3);
             
             Console.Clear();
             Console.ResetColor();

@@ -17,6 +17,7 @@ namespace PaymentSystem
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine($"O seu saldo atual é de R${this.saldo}");
+            Console.WriteLine($"O valor da compra é de R${Valor}");
             Thread.Sleep(3500);
             Console.ResetColor();
 
