@@ -51,6 +51,7 @@ namespace PaymentSystem
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
                     float novoSaldo = saldo - Valor;
                     Console.WriteLine($"Pagamento efetuado com sucesso!");
+                    Console.WriteLine($"Valor do pagamento: {Valor:C2}");                   
                     Console.WriteLine($"O seu novo saldo é de: R${novoSaldo}");
                     Thread.Sleep(3000);
                     Console.Write("Aperte <Enter> para confirmar... ");

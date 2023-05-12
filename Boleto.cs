@@ -24,7 +24,7 @@ namespace PaymentSystem
 
             // Converter os valores para strings e concatenar os campos do boleto
             
-            NumeroBoleto = $"{banco}{fatorVencimento}{"0000000000"}{nossoNumero}{valorComDesconto.ToString("0.00").Replace(",", "")}";
+            NumeroBoleto = $"{banco}.{fatorVencimento}.{"000000000 0"} {nossoNumero}.{valorComDesconto.ToString("0.00").Replace(",", "")}";
 
             return "";
         }
@@ -57,7 +57,8 @@ namespace PaymentSystem
                 //  Exibir o código de barras e valor a ser pago
                 Console.ResetColor();
                 Console.ForegroundColor = ConsoleColor.DarkBlue;
-                Console.WriteLine($"Valor a ser pago: R${valorComDesconto.ToString("0.00")}");
+                Console.WriteLine($"Valor inicial: {Valor:C2}");
+                Console.WriteLine($"Valor com 12% de Desconto: R${valorComDesconto.ToString("0.00")}");
                 Console.ResetColor();
                 Console.WriteLine();
                 

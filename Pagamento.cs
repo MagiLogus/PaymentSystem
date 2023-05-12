@@ -1,11 +1,11 @@
 namespace PaymentSystem
 {
-    public class Pagamento 
+    public class Pagamento
     {
 
-        DateTime Data = DateTime.Now;
+        DateTime Data = DateTime.Now.AddDays(3);
         public float Valor;
-        
+
         public string Cancelar()
         {
             Console.WriteLine($"Cancelando opreacao...");
@@ -15,16 +15,17 @@ namespace PaymentSystem
             Thread.Sleep(2000);
 
             Console.Clear();
-            
-            return "";            
+
+            return "";
         }
 
-        public void DataVencimento(){
+        public void DataVencimento()
+        {
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine($"Vencimento em {Data.ToString("dd/MM/yyyy")}");
             Console.ResetColor();
-            
+
         }
     }
 }

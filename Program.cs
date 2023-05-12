@@ -50,8 +50,9 @@ switch (opcao)
         Console.ResetColor();
         boleto.Valor = float.Parse(Console.ReadLine());
         boleto.Registrar();
-        Console.Write("Aperte <Enter> para sair... ");
-        while (Console.ReadKey(true).Key != ConsoleKey.Enter) {}
+        Console.Write("Aperte <Enter> para voltar ao menu... ");
+        while (Console.ReadKey(true).Key != ConsoleKey.Enter);
+        Console.Clear();
         break;
     case 2:
         Console.ResetColor();
@@ -73,6 +74,7 @@ switch (opcao)
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Saindo do sistema...");
+        Thread.Sleep(2250);
         Console.ResetColor();
         Console.Clear();
         break;
